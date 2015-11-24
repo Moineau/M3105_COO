@@ -1,0 +1,26 @@
+
+public class TestFabrique 
+{
+	public static void main(String[] args) 
+	{
+		// Airbus
+		UsineJet airbus = new UsineJet(Air, "Toulouse");
+		System.out.println(airbus);
+		
+		Jet j1 = airbus.fabriquerJet("A380", "Trent");
+		System.out.println(j1);
+		
+		Jet j2 = airbus.fabriquerJet("A320", "RollRoyce");
+		System.out.println(j1);
+		
+		// Boeing
+		UsineJet boeing = new UsineJet("Seatle");
+		System.out.println(boeing);
+		
+		Jet j3 = boeing.fabriquerJet("B747", "RollRoyce");
+		System.out.println(j3);
+		
+		Jet j4 = boeing.fabriquerJet("B737", "Trent");
+		System.out.println(j4);
+	}
+}

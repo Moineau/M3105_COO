@@ -1,0 +1,13 @@
+import java.util.ArrayList;
+
+public class UsineJetAirbus extends Jet{
+
+	public UsineJetAirbus(String uneMarque, String unModele, Fuselage unFuselage, ArrayList<Reacteur> r) {
+		super(uneMarque, unModele, unFuselage, r);
+		// TODO Auto-generated constructor stub
+	}
+
+
+
+
+}

@@ -1,0 +1,39 @@
+import java.util.ArrayList;
+
+public abstract class Jet 
+{
+	private String marque;
+	private String modele;
+	private Fuselage f;
+	private ArrayList<Reacteur> reacteurs;
+
+	public Jet(String uneMarque, String unModele, Fuselage unFuselage, ArrayList<Reacteur> r)
+	{
+		this.marque = uneMarque;
+		this.modele = unModele;
+		this.f = unFuselage;
+		this.reacteurs = r;
+	}
+
+	public String getMarque()
+	{
+		return this.marque;
+	}
+
+	public String getModele()
+	{
+		return this.modele;
+	}
+
+	public String toString()
+	{
+		String s = this.getMarque() + " " + this.getModele() + "\n" + f.toString() + ", " + "\n";
+	
+		for (int i = 0 ; i < this.reacteurs.size() ; i++)
+		{
+			s = s + "reacteur n° "+ i + " : " + reacteurs.get(i) + "\n";
+		}
+		
+		return s;
+	}
+}

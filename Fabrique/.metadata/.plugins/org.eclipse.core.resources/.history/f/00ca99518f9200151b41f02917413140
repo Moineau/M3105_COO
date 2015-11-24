@@ -1,0 +1,63 @@
+/**
+ * Usine de fabrication de jets
+
+/**
+ * @author Dominique Bouthinon
+ *
+ */
+public abstract class UsineJet
+{	
+	private String constructeur ;
+	private String ville ;
+
+	
+	/**
+	 * 
+	 * initialise l'Usine avec uneVille
+	 */
+	public UsineJet(String unConstructeur, String uneVille)
+	{
+		this.constructeur 	= unConstructeur ;
+		this.ville 		= uneVille ;
+	}
+	
+	
+	/**
+	 * 
+	 * @return le constructeur possedant l'Usine
+	 */
+	public String getConstructeur()
+	{
+		return this.constructeur ;
+	}
+	
+	/**
+	 * 
+	 * @return la ville ou se situe l'Usine
+	 */
+	public String getVille()
+	{
+		return this.ville ;
+	}
+	
+	
+	/** retourne la description de l'usine courante 
+	 * 
+	 */
+	public String toString()
+	{
+		return "usine " + this.getConstructeur() + " de " + this.getVille() ;
+		
+	}
+	
+	
+
+	/** 
+	 * Fabrique un jet
+	 * @param marque
+	 * @param modele
+	 * @return
+	 */
+	public abstract Jet fabriquerJet(String modeleJet, String marqueReacteur) ;
+
+}

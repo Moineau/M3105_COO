@@ -1,0 +1,67 @@
+import java.util.ArrayList;
+import java.util.Scanner ;
+
+
+/**
+ * @author Dominique Bouthinon
+ *
+ *	gere un Jet
+ */
+public abstract class Jet 
+{
+	private String marque 				;
+	private String modele 				;
+	private Fuselage f 					;	// association
+	private ArrayList<Reacteur> reacteurs 	;	// association
+	
+	/**
+	 * initialise le jet avec uneMarque, unModele, unFuselage et nbReacteurs
+	 */
+	public Jet(String uneMarque, String unModele, Fuselage unFuselage, 
+			 ArrayList<Reacteur> r)
+	{
+		this.marque = uneMarque ;
+		this.modele = unModele  ;
+		this.f = unFuselage 	;
+		this.reacteurs = r 		;
+	}
+	
+	
+	/**
+	 *  retourne la marque du Jet
+	 */
+	public String getMarque()
+	{
+		return this.marque ;
+	}
+	
+	
+	/**
+	 *  retourne le modele du Jet
+	 */
+	public String getModele()
+	{
+		return this.modele ;
+	}
+	
+
+	
+	/**
+	 * retourne la chaine decrivant le Jet :
+	 * caracteristiques du Fuselage, de chaque reacteur, et poids total du jet
+	 */
+	public String toString()
+	{
+		String s = this.getMarque() + " " + this.getModele() + "\n" + 
+				 f.toString() + ", " + "\n";
+	
+		for (int i = 0 ; i < this.reacteurs.size() ; i++)
+		{
+			s = s + "reacteur n° "+ i + " : " + reacteurs.get(i) + "\n" ;
+		}
+		
+		return s ;
+	}
+	
+}
+// fin classe Jet

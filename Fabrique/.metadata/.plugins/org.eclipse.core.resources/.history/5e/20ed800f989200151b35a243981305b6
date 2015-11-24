@@ -1,0 +1,5 @@
+
+public class UsineJetAirbus extends UsineJet{
+
+	public abstract Jet fabriquerJet(String modeleJet, String marqueReacteur);
+}

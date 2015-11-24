@@ -1,0 +1,108 @@
+public abstract class Reacteur
+{
+	private String marque;
+	private int poids;
+	private int poussee;
+
+	public Reacteur(String uneMarque, int unPoids, int unePoussee) 
+	{
+		this.marque = uneMarque;
+		this.poids = unPoids;
+		this.poussee = unePoussee;
+	}
+
+	public Reacteur(Reacteur r)
+	{
+		this.marque = r.getMarque();
+		this.poids = r.getPoids();
+		this.poussee = r.getPoussee();
+	}
+
+	public int getPoids()
+	{
+		return this.poids;
+	}
+
+	public int getPoussee()
+	{
+		return this.poussee;
+	}
+
+	public String getMarque()
+	{
+		return this.marque;
+	}
+
+	public String toString()
+	{
+		return this.getMarque() + ", poids = " + this.getPoids() + ", pousee = " 	+ this.getPoussee() ;
+	}
+}
+
+//
+
+public abstract class Reacteur
+{
+	private String marque    ;
+	private int    poids     ;
+	private int    poussee   ;
+
+
+	/**
+	 *  initialise le Reacteur courant avec unPoids et unePoussee
+	 */
+	public Reacteur(String uneMarque, int unPoids, int unePoussee) 
+	{
+		this.marque 	= uneMarque  ;
+		this.poids 	= unPoids    ;
+		this.poussee 	= unePoussee ;
+	}
+	
+	
+	/**
+	 *  constructeur par copie
+	 */
+	public Reacteur(Reacteur r)
+	{
+		this.marque 	= r.getMarque()	;
+		this.poids 	= r.getPoids() 	;
+		this.poussee 	= r.getPoussee();
+	}
+	
+	
+	/**
+	 * retourne le poids du Reacteur
+	 */
+	public int getPoids()
+	{
+		return this.poids ;
+	}
+	
+	
+	/**
+	 * retourne la poussee du Reacteur
+	 */
+	public int getPoussee()
+	{
+		return this.poussee ;
+	}
+	
+	
+	/**
+	 * retourne la marque du Reacteur
+	 */
+	public String getMarque()
+	{
+		return this.marque ;
+	}
+	
+	/**
+	 * retourne la description du Reacteur courant
+	 */
+	public String toString()
+	{
+		return this.getMarque() 	+ ", poids = " + 
+				this.getPoids() + ", pousee = " 	+ this.getPoussee() ;
+	}
+
+}

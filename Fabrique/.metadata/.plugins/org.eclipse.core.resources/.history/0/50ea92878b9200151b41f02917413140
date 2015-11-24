@@ -1,0 +1,9 @@
+import java.util.ArrayList ;
+
+public class B737 extends Jet 
+{
+	public B737(Fuselage f, ArrayList<Reacteur> r) 
+	{
+		super("boeing", "B737", f, r) ;
+	}
+}

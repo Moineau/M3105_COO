@@ -1,0 +1,16 @@
+INDEX VERSION 1.127+/home/coat/Travail/S3-S4/M3105/TP4/Fabrique/.metadata/.plugins/org.eclipse.jdt.core
+3627191106.index
+1800307528.index
+1889268856.index
+3290038669.index
+2848377770.index
+782923180.index
+2802134450.index
+1030493128.index
+3955972366.index
+845908109.index
+1475989282.index
+3945332847.index
+4091640976.index
+1371323127.index
+288022479.index

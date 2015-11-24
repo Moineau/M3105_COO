@@ -1,0 +1,22 @@
+
+public class UsineJetAirbus extends UsineJet{
+
+	public UsineJetAirbus(String unConstructeur, String uneVille) {
+		super(unConstructeur, uneVille);
+		// TODO Auto-generated constructor stub
+	}
+
+	@Override
+	public Jet fabriquerJet(String modeleJet, String marqueReacteur) {
+		// TODO Auto-generated method stub
+			String s = this.getMarque() + " " + this.getModele() + "\n" + f.toString() + ", " + "\n";
+		
+			for (int i = 0 ; i < this.reacteurs.size() ; i++)
+			{
+				s = s + "reacteur n° "+ i + " : " + reacteurs.get(i) + "\n";
+			}
+			
+			return s;
+	}
+
+}
